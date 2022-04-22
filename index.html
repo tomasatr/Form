@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+          <h1 id="title">
+            Practice exercise form HTML CSS
+          </h1>
+          <p id="description">"This form will be created exclusively for practice"</p>
+        </header>
+        <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">
+              Name
+            </label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="John Smith" required="">
+          </div>
+    
+          <div class="form-group">
+            <label id="email-label" for="email">
+              E-Mail
+            </label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="johns@myemail.com" required="">
+          </div>
+    
+          <div class="form-group">
+            <label id="number-label" for="number">
+              Age (Optional)
+            </label>
+            <input type="number" name="number" id="number" min="10" max="99" class="form-control" value="10">
+          </div>
+    
+          <div class="form-group">
+            <p>Please select an option below</p>
+            <select id="dropdown" name="role" class="form-control" requiered>
+              <option disable selected value> Select current role</option>
+              <option value="student"> Student</option>
+              <option value="job"> Job</option>
+              <option value="learner"> Learner</option>
+              <option value="PreferNro"> Number</option>
+              <option value="other"> Other</option>
+            </select>
+          </div>
+    
+          <div class="form-control">
+            <p>Select one option below</p>
+            <label for="definitely"><input id="definitely" type="radio" name="recommend"> Definitely</label><br>
+            <label for="maybe"><input id="maybe" type="radio" name="recommend"> Maybe</label><br>
+            <label for="not-sure"><input id="not-sure" type="radio" name="recommend"> Not-sure</label><br>
+          </div>
+    
+          <div class="form-group">
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select id="most-like" name="mostlike" class="form-control" requiered>
+              <option disable selected value> Select an option</option>
+              <option value="challenges"> Student</option>
+              <option value="projects"> Job</option>
+              <option value="community"> Learner</option>
+              <option value="openSource"> Number</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <p>Please choose what you would like to improve <span class="clue">(Select all you want)</span></p>
+            <label for="mongodb"><input id="mongodb" type="checkbox" name="prefer" value="mongo"> Mongo DB</label><br>
+            <label for="java"><input id="java" type="checkbox" name="prefer" value="java"> Java</label><br>
+            <label for="html"><input id="html" type="checkbox" name="prefer" value="html"> HTML</label><br>
+            <label for="css"><input id="css" type="checkbox" name="prefer" value="css"> CSS</label><br>
+            <label for="node"><input id="node" type="checkbox" name="prefer" value="node"> NodeJS</label><br>
+            <label for="aws"><input id="aws" type="checkbox" name="prefer" value="aws"> AWS</label><br>
+          </div>
+    
+          <div class="form-group">
+            <p>Any comment?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            
+          </div>
+          
+          <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+    
+        </form>
+        </main>
+      </div>
+
+</body>
+</html>
